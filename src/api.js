@@ -11,7 +11,7 @@ export const getMovies = async () => {
 
 export const searchMovie = async (q) => {
   const search = await axios.get(
-    `${import.meta.env.VITE_APP_URL}/search/movies?query=${q}&api_key=${
+    `${import.meta.env.VITE_APP_URL}/search/movie?query=${q}&api_key=${
       import.meta.env.VITE_APP_API
     }`
   );
